@@ -2,6 +2,7 @@
 
 /*
  * Created with @iobroker/create-adapter v2.1.1
+Test
  */
 
 // The adapter-core module gives you access to the core ioBroker functions
