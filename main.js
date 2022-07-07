@@ -2,7 +2,8 @@
 
 /*
  * Created with @iobroker/create-adapter v2.1.1
-Test
+Test1
+
  */
 
 // The adapter-core module gives you access to the core ioBroker functions
@@ -70,7 +71,7 @@ class EchoIot extends utils.Adapter {
         */
         // the variable testVariable is set to true as command (ack=false)
         await this.setStateAsync('testVariable', true);
-
+        await this.setStateAsync('testVariable', true);
         // same thing, but the value is flagged "ack"
         // ack should be always set to true if the value is received from or acknowledged from the target system
         await this.setStateAsync('testVariable', { val: true, ack: true });
@@ -95,7 +96,7 @@ class EchoIot extends utils.Adapter {
             // Here you must clear all timeouts or intervals that may still be active
             // clearTimeout(timeout1);
             // clearTimeout(timeout2);
-            // ...
+            // ...Hallo
             // clearInterval(interval1);
 
             callback();
