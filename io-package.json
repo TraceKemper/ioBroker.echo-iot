@@ -1,0 +1,79 @@
+{
+    "common": {
+        "name": "echo-iot",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Echo IOT",
+        "titleLang": {
+            "en": "Echo IOT",
+            "de": "Echo-IOT",
+            "ru": "Эхо Интернет вещей",
+            "pt": "Eco IOT",
+            "nl": "Echo IOT",
+            "fr": "Écho IOT",
+            "it": "Eco IoT",
+            "es": "Eco IoT",
+            "pl": "Echo IOT",
+            "zh-cn": "回声物联网"
+        },
+        "desc": {
+            "en": "Integrate your echo devices in Amazon",
+            "de": "Integrieren Sie Ihre Echo-Geräte in Amazon",
+            "ru": "Интегрируйте свои эхо-устройства в Amazon",
+            "pt": "Integre seus dispositivos de eco na Amazon",
+            "nl": "Integreer uw echo-apparaten in Amazon",
+            "fr": "Intégrez vos appareils d'écho dans Amazon",
+            "it": "Integra i tuoi dispositivi eco in Amazon",
+            "es": "Integra tus dispositivos echo en Amazon",
+            "pl": "Zintegruj swoje urządzenia echo w Amazon",
+            "zh-cn": "将您的回声设备集成到亚马逊"
+        },
+        "authors": [
+            "TraceKemper <lukaskemper95@gmail.com>"
+        ],
+        "keywords": [
+            "echo",
+            "alexa",
+            "devices"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "echo-iot.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/TraceKemper/ioBroker.echo-iot/main/admin/echo-iot.png",
+        "readme": "https://github.com/TraceKemper/ioBroker.echo-iot/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "eraseOnUpload": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": []
+}
