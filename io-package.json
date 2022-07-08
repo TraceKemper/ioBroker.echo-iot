@@ -79,8 +79,9 @@
         ]
     },
     "native": {
-        "serverIp": "192.168.178.12",
-        "serverPort": "80",
+        "deviceName": "",
+        "echoName": "",
+        "devices": "",
         "echoType": "Switch"
     },
     "objects": [],
