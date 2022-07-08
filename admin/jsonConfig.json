@@ -9,25 +9,25 @@
                 "deviceName":{
                     "type": "text",
                     "label": "Device name",
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
                     "help": "Name of the device"
                 },
                 "echoName":{
                     "type": "text",
                     "label": "Echo name",
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
                     "help": "Name of the device for the echo"
                 },
                 "echoType":{
                     "type": "select",                    
                     "label": "Echo device type",
-                    "sm": 12,
-                    "md": 6,
-                    "lg": 6,
+                    "sm": 3,
+                    "md": 2,
+                    "lg": 2,
                     "options": [
                         {"label": "Switch", "value": 1},
                         {"label": "Light", "value": 2},
