@@ -15,7 +15,40 @@ class EchoIot extends utils.Adapter {
         // this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
     }
+    /**
+    * Is called when adapter shuts down - callback has to be called under any circumstances!
+    * @param {() => void} callback
+    */
+    onUnload(callback) {
+        try {
+            if (!this.config.deviceName) {
+                this.log.error(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Device name is not set`);
+            } else {
+                this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Device name is ${this.config.deviceName}$`);
+            }
 
+            if (!this.config.echoName) {
+                this.log.error(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo name is not set`);
+            } else {
+                this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo name is ${this.config.echoName}$`);
+            }
+
+            if (!this.config.echoType) {
+                this.log.error(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is not set`);
+            } else {
+                this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is ${this.config.echoType}$`);
+            }
+
+            if (!this.config.devices) {
+                this.log.error(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is not set`);
+            } else {
+                this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is ${this.config.devices}$`);
+            }
+            callback();
+        } catch (e) {
+            callback();
+        }
+    }
 
     async onReady() {
         if (!this.config.deviceName) {
@@ -54,19 +87,11 @@ class EchoIot extends utils.Adapter {
         if (state) {
             // The state was changed
             this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
+            this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is changed ${this.config.devices}$`);
         } else {
             // The state was deleted
             this.log.info(`state ${id} deleted`);
-        }
-    }
-
-
-    onUnload(callback) {
-        try {
-            this.log.debug('cleaned everything up...');
-            callback();
-        } catch (e) {
-            callback();
+            this.log.debug(`AAAAAAAAAAAAAAAAAAAAAAAAAAA Echo type is deleted ${this.config.devices}$`);
         }
     }
 }
