@@ -2,29 +2,29 @@
    "i18n":true,
    "type": "tabs",
    "items": {
-    "_options": {
-        "type":"panel",
-        "label": "Options",
-        "items": {
-            "serverIp":{
-                "type": "text",
-                "sm": 12,
-                "md": 6,
-                "lg": 6,
-                "label": "Server",
-                "help": "IP or hostname"
-            },
-            "serverPort":{
-                "type": "number",
-                "min": 0,
-                "max": 65535,
-                "sm": 12,
-                "md": 6,
-                "lg": 6,
-                "label": "Port"
+        "_options": {
+            "type":"panel",
+            "label": "Options",
+            "items": {
+                "serverIp":{
+                    "type": "text",
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6,
+                    "label": "Server",
+                    "help": "IP or hostname"
+                },
+                "serverPort":{
+                    "type": "number",
+                    "min": 0,
+                    "max": 65535,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6,
+                    "label": "Port"
+                }
             }
         }
-    }
    } 
 
 }
