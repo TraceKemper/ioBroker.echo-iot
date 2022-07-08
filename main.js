@@ -34,9 +34,6 @@ class EchoIot extends utils.Adapter {
      * Is called when databases are connected and adapter received configuration.
      */
     async onReady() {
-        this.log.error(`Device name is ${this.config.deviceName}$`);
-        this.log.error(`Echo name is ${this.config.echoName}$`);
-        this.log.error(`Echo type is ${this.config.echoType}$`);
         // Initialize your adapter here
 
         // The adapters config (in the instance object everything under the attribute "native") is accessible via
@@ -137,6 +134,26 @@ class EchoIot extends utils.Adapter {
         } else {
             // The state was deleted
             this.log.info(`state ${id} deleted`);
+        }
+        if (!this.config.deviceName) {
+            this.log.debug(`Device name is ${this.config.deviceName}$`);
+            return;
+        } else {
+            this.log.debug(`Echo type is ${this.config.echoType}$`);
+        }
+
+        if (!this.config.echoName) {
+            this.log.error(`Echo name is not set`);
+            return;
+        } else {
+            this.log.debug(`Echo name is ${this.config.echoName}$`);
+        }
+
+        if (!this.config.echoType) {
+            this.log.error(`Echo type is not set`);
+            return;
+        } else {
+            this.log.debug(`Echo type is ${this.config.echoType}$`);
         }
     }
 
