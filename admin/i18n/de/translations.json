@@ -13,5 +13,15 @@
     "Dimmable light": "Dimmbares Licht",
     "RGB light": "RGB-Licht",
     "Shutter": "Rolladen",
-    "Other": "Sonstiges"
+    "Other": "Sonstiges",
+    "options": "Optionen",
+    "devices": "Geräte",
+    "device name": "Gerätename",
+    "echo name": "Echoname",
+    "echo device type": "Echo-Gerätetyp",
+    "switch": "Schalter",
+    "light": "Licht",
+    "dimmable light": "dimmbares Licht",
+    "shutter": "Rolladen",
+    "other": "Sonstiges"
 }

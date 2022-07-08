@@ -19,8 +19,7 @@
                             "width": "30%",
                             "title": "device name",
                             "filter": true,
-                            "sort": true,
-                            "default": ""
+                            "sort": true
                         },
                         {
                             "type": "text",
@@ -30,8 +29,7 @@
                             "width": "30%",
                             "title": "echo name",
                             "filter": false,
-                            "sort": false,
-                            "default": 1
+                            "sort": false
                         },
                         {
                             "type": "select",  
@@ -44,7 +42,8 @@
                                 {"label": "dimmable light", "value": 3},
                                 {"label": "RGB light", "value": 4},
                                 {"label": "switch", "value": 5},
-                                {"label": "shutter", "value": 6}
+                                {"label": "shutter", "value": 6},
+                                {"label": "other", "value": 7}
                             ] 
                         }
                     ]
