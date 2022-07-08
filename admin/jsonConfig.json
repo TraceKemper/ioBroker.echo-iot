@@ -2,29 +2,41 @@
    "i18n":true,
    "type": "tabs",
    "items": {
-    "_options": {
-        "type":"panel",
-        "label": "Options",
-        "items": {
-            "serverIp":{
-                "type": "text",
-                "sm": 12,
-                "md": 6,
-                "lg": 6,
-                "label": "Server",
-                "help": "IP or hostname"
-            },
-            "serverPort":{
-                "type": "numper",
-                "min": 0,
-                "max": 65535,
-                "sm": 12,
-                "md": 6,
-                "lg": 6,
-                "label": "Port",
-            }
-        }
-    }
+       "options1": {
+           "type": "panel",
+           "label": "Tab1",
+           "icon": "base64 svg", // optional
+           "items": {
+               "myPort": {
+                   "type": "number",
+                   "min": 1,
+                   "max": 65565,
+                   "label": "Number",
+                   "sm": 6, // 1 - 12
+                   "validator": "data.name", // else error
+                   "hidden": "data.myType === 1", // hidden if myType is 1 
+                   "disabled": "data.myType === 2" // disabled if myType is 2
+               },
+               "options.myType": { // name could support more than one levelhelperText
+                   "newLine": true, // must start from new row
+                   "type": "select",
+                   "label": "Type",
+                   "sm": 6, // 1 - 12
+                   "options": [
+                       {"label": "option 1", "value": 1},
+                       {"label": "option 2", "value": 2}
+                   ] 
+               },
+               "myBool": {
+                   "type": "checkbox",
+                   "label": "My checkbox",
+               }
+           }
+       },
+       "tab2": {
+           "label": "Tab2",
+           "disabled": "data.myType === 1",
+           "hidden": "data.myType === 2",
+       }
    } 
-
 }
