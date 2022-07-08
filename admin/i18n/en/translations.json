@@ -1,15 +1,13 @@
 {
-    "Options":"Options",
-    "Device name":"Device name",
-    "Name of the device": "Name of the device",
-    "Echo name":"Echo name",
-    "Device name":"Device name",
-    "Name of the device for the echo": "Name of the device for the echo",
-    "Echo device type":"Echo device type",
-    "Switch":"Switch",
-    "Light": "Light",
-    "Dimmable light":"Dimmable light",
+    "options":"options",
+    "devices":"devices",
+    "device name":"device name",
+    "echo name":"echo name",
+    "echo device type":"echo device type",
+    "switch":"switch",
+    "light": "light",
+    "dimmable light":"dimmable light",
     "RGB light": "RGB light",
-    "Shutter":"Shutter",
-    "Other": "Other"
+    "shutter":"shutter",
+    "other": "other"
 }

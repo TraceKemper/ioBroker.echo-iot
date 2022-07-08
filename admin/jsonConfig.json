@@ -3,144 +3,53 @@
    "type": "tabs",
    "items": {
         "_options": {
-            "type":"panel",
-            "label": "Options",
-            "items": {
-                "deviceName":{
-                    "type": "text",
-                    "label": "Device name",
-                    "sm": 3,
-                    "md": 2,
-                    "lg": 2,
-                    "help": "Name of the device"
-                },
-                "echoName":{
-                    "type": "text",
-                    "label": "Echo name",
-                    "sm": 3,
-                    "md": 2,
-                    "lg": 2,
-                    "help": "Name of the device for the echo"
-                },
-                "echoType":{
-                    "type": "select",                    
-                    "label": "Echo device type",
-                    "sm": 3,
-                    "md": 2,
-                    "lg": 2,
-                    "options": [
-                        {"label": "Switch", "value": 1},
-                        {"label": "Light", "value": 2},
-                        {"label": "Dimmable light", "value": 3},
-                        {"label": "RGB light", "value": 4},
-                        {"label": "Switch", "value": 5},
-                        {"label": "Shutter", "value": 6}
-                    ] 
-
-                }
-            }
-        },
-        "_advanced": {
             "type": "panel",
-            "label": "birthdays",
+            "label": "options",
             "items": {
-                "birthdays": {
+                "devices": {
                     "type": "table",
                     "sm": 12,
                     "md": 12,
                     "lg": 12,
-                    "label": "birthdays",
+                    "label": "devices",
                     "items": [
                         {
                             "type": "text",
-                            "attr": "name",
-                            "width": "55%",
-                            "title": {
-                                "en": "Name",
-                                "de": "Name",
-                                "ru": "Имя",
-                                "pt": "Nome",
-                                "nl": "Naam",
-                                "fr": "Nom",
-                                "it": "Nome",
-                                "es": "Nombre",
-                                "pl": "Nazwa",
-                                "zh-cn": "姓名"
-                            },
+                            "attr": "deviceName",
+                            "width": "30%",
+                            "title": "device name",
                             "filter": true,
                             "sort": true,
                             "default": ""
                         },
                         {
-                            "type": "number",
-                            "attr": "day",
+                            "type": "text",
+                            "attr": "echoName",
                             "min": 1,
                             "max": 31,
-                            "width": "15%",
-                            "title": {
-                                "en": "Day",
-                                "de": "Tag",
-                                "ru": "День",
-                                "pt": "Dia",
-                                "nl": "Dag",
-                                "fr": "Jour",
-                                "it": "Giorno",
-                                "es": "Día",
-                                "pl": "Dzień",
-                                "zh-cn": "日"
-                            },
+                            "width": "30%",
+                            "title": "echo name",
                             "filter": false,
                             "sort": false,
                             "default": 1
                         },
                         {
-                            "type": "number",
-                            "attr": "month",
-                            "min": 1,
-                            "max": 12,
-                            "width": "15%",
-                            "title": {
-                                "en": "Month",
-                                "de": "Monat",
-                                "ru": "Месяц",
-                                "pt": "Mês",
-                                "nl": "Maand",
-                                "fr": "Mois",
-                                "it": "Mese",
-                                "es": "Mes",
-                                "pl": "Miesiąc",
-                                "zh-cn": "月"
-                            },
-                            "filter": false,
-                            "sort": false,
-                            "default": 1
-                        },
-                        {
-                            "type": "number",
-                            "attr": "year",
-                            "min": 1900,
-                            "max": 2100,
-                            "width": "15%",
-                            "title": {
-                                "en": "Year",
-                                "de": "Jahr",
-                                "ru": "Год",
-                                "pt": "Ano",
-                                "nl": "Jaar",
-                                "fr": "Année",
-                                "it": "Anno",
-                                "es": "Año",
-                                "pl": "Rok",
-                                "zh-cn": "年"
-                            },
-                            "filter": false,
-                            "sort": false,
-                            "default": 2000
+                            "type": "select",  
+                            "attr":"echoType",
+                            "title": "echo device type",
+                            "width": "20%",
+                            "options": [
+                                {"label": "switch", "value": 1},
+                                {"label": "light", "value": 2},
+                                {"label": "dimmable light", "value": 3},
+                                {"label": "RGB light", "value": 4},
+                                {"label": "switch", "value": 5},
+                                {"label": "shutter", "value": 6}
+                            ] 
                         }
                     ]
                 }
             }
         }
    } 
-
 }
