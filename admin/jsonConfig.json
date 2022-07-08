@@ -6,22 +6,37 @@
             "type":"panel",
             "label": "Options",
             "items": {
-                "serverIp":{
+                "deviceName":{
                     "type": "text",
+                    "label": "Device name",
                     "sm": 12,
                     "md": 6,
                     "lg": 6,
-                    "label": "Server",
-                    "help": "IP or hostname"
+                    "help": "Name of the device"
                 },
-                "serverPort":{
-                    "type": "number",
-                    "min": 0,
-                    "max": 65535,
+                "echoName":{
+                    "type": "text",
+                    "label": "Echo name",
                     "sm": 12,
                     "md": 6,
                     "lg": 6,
-                    "label": "Port"
+                    "help": "Name of the device for the echo"
+                },
+                "echoType":{
+                    "type": "select",                    
+                    "label": "Echo device type",
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 6,
+                    "options": [
+                        {"label": "Switch", "value": 1},
+                        {"label": "Light", "value": 2},
+                        {"label": "Dimmable light", "value": 3},
+                        {"label": "RGB light", "value": 4},
+                        {"label": "Switch", "value": 5},
+                        {"label": "Shutter", "value": 6}
+                    ] 
+
                 }
             }
         }
