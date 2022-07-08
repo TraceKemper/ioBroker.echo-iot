@@ -110,12 +110,12 @@ Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev
 -->
 
 ### **WORK IN PROGRESS**
-* (TraceKemper) initial release
+* (TraceKemper) Added Admin 5 configuration
 
 ## License
 MIT License
 
-Copyright (c) 2022 TraceKemper <lukaskemper95@gmail.com>
+Copyright (c) 2022 TraceKemper <trace.git@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
