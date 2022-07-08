@@ -16,18 +16,16 @@
                         {
                             "type": "text",
                             "attr": "deviceName",
-                            "width": "30%",
                             "title": "device name",
+                            "width": "30%",
                             "filter": true,
                             "sort": true
                         },
                         {
                             "type": "text",
                             "attr": "echoName",
-                            "min": 1,
-                            "max": 31,
-                            "width": "30%",
                             "title": "echo name",
+                            "width": "30%",
                             "filter": false,
                             "sort": false
                         },
