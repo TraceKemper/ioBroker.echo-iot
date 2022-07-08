@@ -1,0 +1,17 @@
+{
+    "Options": "Optionen",
+    "Server": "Server",
+    "IP or hostname": "IP oder Hostname",
+    "Port": "Port",
+    "Device name": "Gerätename",
+    "Name of the device": "Name des Geräts",
+    "Echo name": "Echo-Name",
+    "Name of the device for the echo": "Name des Geräts für das Echo",
+    "Echo device type": "Echo-Gerätetyp",
+    "Switch": "Schalter",
+    "Light": "Licht",
+    "Dimmable light": "Dimmbares Licht",
+    "RGB light": "RGB-Licht",
+    "Shutter": "Rolladen",
+    "Other": "Sonstiges"
+}
